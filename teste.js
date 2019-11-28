@@ -1,16 +1,21 @@
-$.ajax({
-	type: 'GET or POST',
-	url: 'http://',
-	dataType: 'json',
-	complete : function(){
-		alert('Foi gerado com sucesso');
+jQuery.ajax({
+	type: 'post',
+	url: '<%=r',
+	data : {
+		'<%=%>' : '<%=%>',
+		'<%=%>': plateJava,
+		'<%=%>': startDate.val()
 	},
-	success: function(jsonMSG){
-		var promoCode = jsonMSG.rs;
+	dataType : 'json',
+// 	complete : function(data){
+//		alert('Foi gerado com sucesso----plate---'+data.contactReason+'---startDate---'+startDate);
+//	},
+	success: function(data){
 
-		$("#theCode").val(promoCode);
+		$('#modalwait').hide();
 	},
 	error : function(){
-		alert('erro');
+		$('#modalwait').hide();	
+		alert('xxxxxxxxxxxxxxx.');
 	}
 });
