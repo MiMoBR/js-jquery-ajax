@@ -17,7 +17,11 @@ $.ajax({
 	error : function(){
 		$('#modalwait').hide();	
 		alert('xxxxxxxxxxxxxxx.');
-	}
+	},
+// 					complete: function(){
+// 						hascallDealerAddressMain();
+// 						alert('2');
+// 					}
 });
 ----------------------------------------------- URL find json object -----------------------------------------------
 $.ajax({
@@ -39,5 +43,9 @@ $.ajax({
 	error : function(){
 //				$('#modalwait').hide();	
 		alert('DEU CORONA');
-	}
+	},
+// 					complete: function(){
+// 						hascallDealerAddressMain();
+// 						alert('2');
+// 					}
 });
